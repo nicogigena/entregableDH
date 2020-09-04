@@ -1,0 +1,64 @@
+* {
+  font-family: 'Josefin Sans', sans-serif; /* hay que elegir una fuente que les guste en https://fonts.google.com/ y despues agregarla*/
+  background-color: transparent;
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: cadetblue;
+  padding-top:0;
+}
+
+header {
+  background-color: aquamarine;
+  width:100%;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+a:hover{
+  color:red;
+  background-color: white;
+}
+
+header ul {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:1% 10%;
+  margin:0;
+}
+
+header ul li {
+  border-radius: 10px;
+  padding:10px 10px;
+}
+
+header ul li:hover {
+  background-color: white;
+}
+
+header ul a {
+  font-size: 3em;
+  border-radius: 10px;
+}
+
+div.container li {
+  font-size:1.5em;
+}
+img {
+  width:10%;
+}
+div {
+  margin: 10px 0;
+  font-size: 20px;
+}

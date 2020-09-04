@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BANDAS</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+
+
+  <body>
+
+
+  
+    <%- include("./parts/header.ejs") %>  
+
+<div class="container">
+
+
+<h1>bandasId</h1>
+
+<a href="/bandas"><button>Volver</button></a>
+
+<h2><%= bandNombre%></h2>
+<div>Genero: <a href=<%= "/generos/" + lista[bandIndex].genero%>><%= lista[bandIndex].genero %> </a> </div>
+<div><img src=<%= lista[bandIndex].cover%> alt=""></div>
+
+
+<div>Integrantes: <%= lista[bandIndex].integrantesList + " (" + lista[bandIndex].integrantes + ")"%></div>
+<div>Canciones Conocidas: <%= lista[bandIndex].topCanciones%></div>
+<br>
+<iframe src=<%= lista[bandIndex].video%> frameborder="0"></iframe>
+
+
+</div>
+
+
+  </body>
+</html>

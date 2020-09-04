@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BANDAS</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bandas.css' />
+  </head>
+
+
+
+  <body>
+
+
+  
+    <%- include("./parts/header.ejs") %>  
+
+<div class="container">
+
+
+<h1>bandas</h1>
+
+<ul>
+    <% for (let i = 0; i < bandList.length; i++) {%>
+    <a href=<%="/bandas/id/"+list[i].id %>>
+     <li>
+      <div>
+        <%=bandList[i]%>
+      </div>
+      <img src=<%= list[i].cover%> alt="">
+    </li>
+    </a>
+    
+    <%}%>
+</ul>
+
+
+</div>
+
+
+  </body>
+</html>
